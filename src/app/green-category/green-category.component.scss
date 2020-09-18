@@ -1,0 +1,36 @@
+@import "../../shared/styles/colors";
+.category{
+  display: inline-block;
+  box-sizing: border-box;
+  &.selected{
+    border: 5px solid $green;
+  }
+
+  .categories{
+    display: none;
+  }
+  background: $green;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, $green, $lightGreen);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, $green, $lightGreen); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  padding: 20px;
+  border-radius: 10px;
+  line-height: 23px;
+  cursor: pointer;
+
+
+  &:hover{
+    opacity: 0.8;
+  }
+
+  h3{
+    color: #FFF;
+    margin-bottom: 10px;
+  }
+
+  @media screen and (max-width: 1000px) {
+    width: calc(100% - 40px);
+    margin: 20px;
+    box-sizing: border-box;
+  }
+}

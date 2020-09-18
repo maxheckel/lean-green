@@ -1,0 +1,3 @@
+<div [ngClass]="'food ' + (currentFood === food ? 'selected' : '')" (click)="setLean()">
+  {{food.oz}}oz of {{food.name}} ({{food.minTotalFat}}-{{food.maxTotalFat}}g fat)
+</div>

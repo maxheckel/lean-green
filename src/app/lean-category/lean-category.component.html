@@ -1,0 +1,12 @@
+<div [classList]="'category ' + (selectedCategory === category ? 'selected' : '')" (click)="setCategory()">
+  <h3>{{category}}</h3>
+  <p>Choose {{options[0].oz}}oz. cooked portion that has {{options[0].minTotalFat}} - {{options[0].maxTotalFat}}g total
+    fat and add {{options[0].fatServings}} Healthy Fat servings.</p>
+  <div class="categories">
+  <span *ngFor="let opt of options; let i = index">
+    {{opt.name}}
+    <ng-container *ngIf="i < options.length-1">,</ng-container>
+  </span>
+  </div>
+
+</div>

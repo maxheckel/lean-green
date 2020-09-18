@@ -1,0 +1,3 @@
+<div [ngClass]="'food ' + ((currentFood ? currentFood.name : '') === food.name ? 'selected' : '')" (click)="setGreen()">
+  {{food.cups}} cup{{food.cups != 1 ? 's' : ''}} of {{food.name}}
+</div>

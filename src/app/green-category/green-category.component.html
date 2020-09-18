@@ -1,0 +1,9 @@
+<div [classList]="'category ' + (selectedCategory === category ? 'selected' : '')" (click)="setCategory()">
+  <h3>{{category}}</h3>
+
+  <span *ngFor="let opt of options; let i = index">
+    {{opt.name}}<ng-container *ngIf="i < options.length-1">,</ng-container>
+  </span>
+
+
+</div>

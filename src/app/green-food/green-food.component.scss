@@ -1,0 +1,14 @@
+@import "../../shared/styles/colors";
+.food{
+  background-color: $lightGreen;
+  color: #FFFFFF;
+  display: inline-block;
+  margin: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 30px;
+
+  &.selected{
+    border: 2px solid #000;
+  }
+}

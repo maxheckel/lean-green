@@ -1,0 +1,25 @@
+@import "colors";
+
+*{
+  font-family: 'Source Sans Pro', Sans-Serif, sans-serif;
+  font-size: 16px;
+}
+
+h1, h2{
+  color: $green;
+  font-family: 'Playfair Display', serif;
+}
+
+h1{
+  font-size: 48px;
+}
+
+h2{
+  font-size: 28px;
+}
+
+h3{
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px;
+}
